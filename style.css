@@ -1,0 +1,64 @@
+header
+{
+    background-image: url('phare.jpg');
+    background-size: contain;
+    background-repeat:no-repeat;
+    min-height: 100vh;
+}
+img
+{
+    width: 100%;
+    height: auto;
+}
+div
+{
+    border: 1px solid red;
+}
+.container-flex
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.container-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}/*
+#case1{
+    grid-row: 1;
+}
+#case2{
+    grid-row: 1;
+    gri-column: 1/2
+}
+#case3{
+    grid-row: 2;
+}#case4{
+    grid-row: 2;
+}*/
+
+@media (max-width:640px) 
+{
+    .container-flex
+    {
+        flex-direction: column;
+    }
+    .container-grid
+    {
+        grid-template-columns: 1fr;
+        
+    }
+   /* #case1{
+        grid-row: 1;
+    }
+    #case2{
+        grid-row: 2;
+    }
+    #case3{
+        grid-row: 3;
+    }#case4{
+        grid-row: 4;
+    }*/
+}
